@@ -1,0 +1,278 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =========================================================
+   SIGNBRIDGE GLOBAL THEME SYSTEM
+   ========================================================= */
+
+:root {
+  --sb-primary: #22d3ee;
+  --sb-secondary: #3b82f6;
+  --sb-accent: #8b5cf6;
+
+  --sb-bg: #070b14;
+  --sb-surface: rgba(255, 255, 255, 0.04);
+  --sb-border: rgba(255, 255, 255, 0.10);
+
+  --sb-text: #ffffff;
+  --sb-muted: #94a3b8;
+
+  --sb-card: rgba(255, 255, 255, 0.04);
+}
+
+/* =========================================================
+   OCEAN
+   ========================================================= */
+
+html.theme-ocean {
+  --sb-primary: #22d3ee;
+  --sb-secondary: #3b82f6;
+  --sb-accent: #8b5cf6;
+
+  --sb-bg: #070b14;
+  --sb-surface: rgba(255, 255, 255, 0.04);
+  --sb-border: rgba(255, 255, 255, 0.10);
+
+  --sb-text: #ffffff;
+  --sb-muted: #94a3b8;
+
+  --sb-card: rgba(255, 255, 255, 0.04);
+}
+
+/* =========================================================
+   SUNSET
+   ========================================================= */
+
+html.theme-sunset {
+  --sb-primary: #fb923c;
+  --sb-secondary: #ec4899;
+  --sb-accent: #a855f7;
+
+  --sb-bg: #120a0d;
+  --sb-surface: rgba(255, 255, 255, 0.045);
+  --sb-border: rgba(255, 255, 255, 0.10);
+
+  --sb-text: #ffffff;
+  --sb-muted: #a8a29e;
+
+  --sb-card: rgba(255, 255, 255, 0.045);
+}
+
+/* =========================================================
+   FOREST
+   ========================================================= */
+
+html.theme-forest {
+  --sb-primary: #34d399;
+  --sb-secondary: #14b8a6;
+  --sb-accent: #06b6d4;
+
+  --sb-bg: #06110e;
+  --sb-surface: rgba(255, 255, 255, 0.04);
+  --sb-border: rgba(255, 255, 255, 0.10);
+
+  --sb-text: #ffffff;
+  --sb-muted: #94a3b8;
+
+  --sb-card: rgba(255, 255, 255, 0.04);
+}
+
+/* =========================================================
+   LIGHT MODE
+   ========================================================= */
+
+html.light-mode {
+  --sb-bg: #f8fafc;
+
+  --sb-surface: rgba(255, 255, 255, 0.92);
+  --sb-card: #ffffff;
+
+  --sb-border: rgba(15, 23, 42, 0.10);
+
+  --sb-text: #0f172a;
+  --sb-muted: #64748b;
+}
+
+/* =========================================================
+   BASE
+   ========================================================= */
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+html {
+  background: var(--sb-bg);
+  transition: background-color 0.4s ease;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--sb-bg);
+  color: var(--sb-text);
+
+  transition:
+    background-color 0.4s ease,
+    color 0.4s ease;
+}
+
+/* =========================================================
+   GLOBAL THEME HELPERS
+   ========================================================= */
+
+.sb-primary {
+  color: var(--sb-primary) !important;
+}
+
+.sb-secondary {
+  color: var(--sb-secondary) !important;
+}
+
+.sb-accent {
+  color: var(--sb-accent) !important;
+}
+
+.sb-primary-bg {
+  background-color: var(--sb-primary) !important;
+}
+
+.sb-secondary-bg {
+  background-color: var(--sb-secondary) !important;
+}
+
+.sb-accent-bg {
+  background-color: var(--sb-accent) !important;
+}
+
+.sb-surface {
+  background: var(--sb-surface) !important;
+  border-color: var(--sb-border) !important;
+}
+
+.sb-card {
+  background: var(--sb-card) !important;
+  border-color: var(--sb-border) !important;
+}
+
+.sb-border {
+  border-color: var(--sb-border) !important;
+}
+
+/* =========================================================
+   SMOOTH THEME TRANSITION
+   ========================================================= */
+
+body,
+button,
+a,
+div,
+section,
+aside,
+main,
+nav,
+header,
+footer,
+input,
+select,
+textarea {
+  transition:
+    background-color 0.35s ease,
+    border-color 0.35s ease,
+    color 0.25s ease,
+    box-shadow 0.35s ease;
+}
+
+/* =========================================================
+   LIGHT MODE - COMMON TAILWIND SURFACES
+   ========================================================= */
+
+html.light-mode .bg-slate-950 {
+  background-color: #f8fafc !important;
+}
+
+html.light-mode .bg-slate-900 {
+  background-color: #ffffff !important;
+}
+
+html.light-mode .bg-slate-800 {
+  background-color: #f1f5f9 !important;
+}
+
+html.light-mode .text-white {
+  color: #0f172a !important;
+}
+
+html.light-mode .text-slate-300 {
+  color: #475569 !important;
+}
+
+html.light-mode .text-slate-400 {
+  color: #64748b !important;
+}
+
+html.light-mode .text-slate-500 {
+  color: #64748b !important;
+}
+
+html.light-mode .text-slate-600 {
+  color: #64748b !important;
+}
+
+html.light-mode .border-white\/10 {
+  border-color: rgba(15, 23, 42, 0.10) !important;
+}
+
+html.light-mode .border-white\/\[0\.07\] {
+  border-color: rgba(15, 23, 42, 0.08) !important;
+}
+
+/* =========================================================
+   SCROLLBAR
+   ========================================================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--sb-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: color-mix(
+    in srgb,
+    var(--sb-primary) 35%,
+    #64748b
+  );
+
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--sb-primary);
+}
+
+/* Standard scrollbar property */
+* {
+  scrollbar-color: var(--sb-primary) var(--sb-bg);
+  scrollbar-width: thin;
+}
+
+/* =========================================================
+   SELECTION
+   ========================================================= */
+
+::selection {
+  background: color-mix(
+    in srgb,
+    var(--sb-primary) 30%,
+    transparent
+  );
+
+  color: var(--sb-text);
+}

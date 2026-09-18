@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+backend/.venv/
+.venv/
+
+# Frontend build
+dist/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local database
+*.db
+*.sqlite
+*.sqlite3
+
+# Large datasets
+backend/dataset/
+backend/data/*
+dataset/
+data/
+
+# Environment/secrets
+.env
+.env.*
+!.env.example
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+!backend/data/INDIAN SIGN LANGUAGE ANIMATED VIDEOS/
+!backend/data/INDIAN SIGN LANGUAGE ANIMATED VIDEOS/**
