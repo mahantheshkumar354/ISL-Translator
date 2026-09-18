@@ -1,4 +1,6 @@
-"""
+git add .
+git commit -m "Update ISL Translator"
+git push origin main"""
 Dataset loading for the ISL Sign-to-Text pipeline.
 
 Discovers every class folder under `data/isl_images/`, streams each
